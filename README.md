@@ -88,16 +88,6 @@ The following changes were made from the [original GitHub repositories](https://
    - `torchvision`
    - `ruamel.yaml`
    - `nltk`
-   - `streamlit`
-   - `fpdf`
-
-2. **Download NLTK Data**:
-
-   ```python
-   import nltk
-   nltk.download('wordnet')
-   nltk.download('omw-1.4')
-   ```
 
 ### 2.4. Running the Fine-tuning
 
@@ -125,13 +115,7 @@ The following changes were made from the [original GitHub repositories](https://
 
 ### 3.1. Setting Up the Environment
 
-1. **Install Required Packages**:
-
-   ```bash
-   pip install streamlit fpdf
-   ```
-
-2. **Prepare the Model Checkpoint**:
+1. **Prepare the Model Checkpoint**:
    - Place the fine-tuned model checkpoint file `checkpoint_best.pth` in the `output/flickr8k/` directory.
 
 ### 3.2. Running the Streamlit App
