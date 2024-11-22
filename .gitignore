@@ -7,6 +7,9 @@ models/__pycache__/
 *.pth
 *.ckpt
 
+# 기타 파일
+BLIP-SMILE/
+
 # 데이터셋 및 출력 파일
 data/Flickr8k/Images/
 output/flickr8k/result/
