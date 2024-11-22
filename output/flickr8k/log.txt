@@ -1,0 +1,1 @@
+{"train_lr": 0.0, "train_loss": 0.667, "val_BLEU": 0.03555744006863721, "val_METEOR": 0.31587613111763385, "epoch": 0, "best_epoch": 0}

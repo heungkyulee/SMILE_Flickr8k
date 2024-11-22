@@ -1,0 +1,37 @@
+# caption_flickr8k.yaml
+
+# 데이터 경로 설정
+image_root: data/Flickr8k/images
+ann_root: data/Flickr8k/annotations
+
+# 학습, 검증, 테스트 파일 설정
+train_file: flickr8k_train.json
+val_file: flickr8k_val.json
+test_file: flickr8k_test.json
+
+# COCO GT 루트 (Flickr8k에서는 필요 없음)
+# coco_gt_root: 'annotation/coco_gt'  # 이 부분은 제거하거나 Flickr8k에 맞게 수정
+
+# 모델 체크포인트 경로
+pretrained: checkpoints/blip_smile_base.pth
+
+# 모델 설정
+vit: base
+vit_grad_ckpt: false
+vit_ckpt_layer: 0
+batch_size: 8 # GPU 메모리에 따라 조정
+init_lr: 1e-5
+
+# 이미지 크기
+image_size: 224
+
+# generation configs
+max_length: 75
+min_length: 1
+num_beams: 3
+prompt: 'a picture of '
+
+# optimizer
+weight_decay: 0.05
+min_lr: 0
+max_epoch: 5 # 데이터셋 크기에 따라 조정

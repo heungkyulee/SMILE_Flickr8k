@@ -1,0 +1,30 @@
+# Python 캐시 파일 및 디렉토리
+__pycache__/
+models/__pycache__/
+*.py[cod]
+
+# 모델 체크포인트 및 가중치 파일
+*.pth
+*.ckpt
+
+# 데이터셋 및 출력 파일
+data/Flickr8k/Images/
+output/flickr8k/result/
+*.json
+
+# Jupyter 노트북의 체크포인트
+.ipynb_checkpoints/
+
+# 환경 설정 파일
+.env
+*.env
+
+# 운영체제별 파일
+.DS_Store
+Thumbs.db
+
+# IDE 및 편집기 설정 파일
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
