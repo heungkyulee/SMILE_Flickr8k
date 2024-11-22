@@ -12,7 +12,7 @@ This project is based on the [BLIP](https://github.com/salesforce/BLIP) and [SMI
 
 ## 1. Project Modifications
 
-The following changes were made from the original GitHub repositories:
+The following changes were made from the [original GitHub repositories](https://github.com/yuezih/SMILE):
 
 - **Dataset Support**: Replaced the COCO dataset with the **Flickr8k dataset**.
 - **Configuration File Updates**: Added the `configs/caption_flickr8k.yaml` file for configurations tailored to the Flickr8k dataset.
