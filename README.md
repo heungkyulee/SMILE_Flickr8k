@@ -25,15 +25,19 @@
 
 ## 2. Flickr8k 데이터셋 다운로드 및 파인튜닝 과정
 
-### 2.1. Flickr8k 데이터셋 다운로드
+### 2.1. 체크포인트 모델 및 Flickr8k 데이터셋 다운로드
 
-1. **Flickr8k 데이터셋 페이지로 이동**: [Flickr8k 데이터셋](https://forms.illinois.edu/sec/1713398)
-2. **데이터셋 다운로드 요청**:
-   - 페이지에서 요구하는 정보를 입력하여 데이터셋 다운로드 링크를 요청합니다.
-   - 제공된 링크를 통해 다음 파일들을 다운로드합니다:
-     - `Flickr8k_Dataset.zip` (이미지 파일)
-     - `Flickr8k_text.zip` (캡션 및 데이터 분할 정보)
-3. **데이터셋 압축 해제**:
+1. **체크포인트 모델 다운로드**: [blip_smile_base.pth](https://huggingface.co/spaces/yuezih/BLIP-SMILE/tree/main/model)
+2. **체크포인트 모델 배치**:
+   - 다운로드한 `blip_smile_base.pth` 파일을 `checkpoints/blip_base.pth` 경로에 배치합니다.
+3. **Flickr8k 데이터셋 페이지로 이동**: [Flickr8k 데이터셋](https://www.kaggle.com/datasets/adityajn105/flickr8k)
+4. **데이터셋 다운로드**:
+
+   - 다운로드 버튼을 눌러 아래의 항목을 저장합니다.
+     - `images` (이미지 폴더, 8,091 파일)
+     - `captions.txt` (캡션 정보)
+
+5. **데이터셋 압축 해제**:
 
    - 다운로드한 ZIP 파일을 `data/Flickr8k/` 디렉토리에 압축 해제합니다.
    - 디렉토리 구조는 다음과 같아야 합니다:
@@ -158,16 +162,9 @@
 
 ---
 
-## 문의 사항
-
-- 사용 중 문제가 발생하거나 개선 사항이 있으면 이슈를 등록해 주세요.
-- 팀원들과의 협업을 위해 Pull Request를 통해 코드 변경 사항을 공유해 주세요.
-
----
-
 ## 참고 자료
 
 - [BLIP 레포지토리](https://github.com/salesforce/BLIP)
 - [SMILE 레포지토리](https://github.com/yuezih/SMILE)
-- [Flickr8k 데이터셋 정보](https://forms.illinois.edu/sec/1713398)
+- [Flickr8k 데이터셋 정보](https://www.kaggle.com/datasets/adityajn105/flickr8k)
 - [Streamlit 공식 문서](https://streamlit.io/)
