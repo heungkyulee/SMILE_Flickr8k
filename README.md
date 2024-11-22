@@ -122,23 +122,6 @@ The following changes were made from the [original GitHub repositories](https://
 
 1. **Modify the `app.py` File**:
 
-   Set the model path in `app.py` to the fine-tuned model.
-
-   ```python
-   def load_model():
-       image_size = 384
-       model_path = 'output/flickr8k/checkpoint_best.pth'  # Path to the fine-tuned model
-       model = caption_model(pretrained=model_path, image_size=image_size, vit='base')
-       model.eval()
-       return model
-   ```
-
-2. **Run the App**:
-
-   ```bash
-   streamlit run app.py
-   ```
-
    1. If you want to use pre-trained base model(model_base_capfilt_large.pth), uncomment below and comment out the existing load_model content.
 
    ```python
@@ -160,6 +143,12 @@ The following changes were made from the [original GitHub repositories](https://
        model = caption_model(pretrained=model_path, image_size=image_size, vit='base')
        model.eval()
        return model
+   ```
+
+2. **Run the App**:
+
+   ```bash
+   streamlit run app.py
    ```
 
 3. **Using the Demo**:
