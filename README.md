@@ -139,6 +139,29 @@ The following changes were made from the [original GitHub repositories](https://
    streamlit run app.py
    ```
 
+   1. If you want to use pre-trained base model(model_base_capfilt_large.pth), uncomment below and comment out the existing load_model content.
+
+   ```python
+    def load_model():
+        image_size = 384
+        model_url = 'https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_capfilt_large.pth'
+        model = caption_model( image_size=image_size, vit='base')
+        # model = caption_model(pretrained=model_url, image_size=image_size, vit='base')
+        model.eval()
+        return model
+   ```
+
+   2. If you want to use your own trained model, keep the existing load_model content.
+
+   ```python
+    def load_model():
+       image_size = 384
+       model_path = 'output/flickr8k/checkpoint_best.pth'  # 학습된 모델의 경로
+       model = caption_model(pretrained=model_path, image_size=image_size, vit='base')
+       model.eval()
+       return model
+   ```
+
 3. **Using the Demo**:
    - Access the app at `http://localhost:8501` in your web browser.
    - Upload images to generate captions.
