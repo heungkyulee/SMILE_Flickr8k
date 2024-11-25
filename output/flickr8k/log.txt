@@ -1,1 +1,6 @@
 {"train_lr": 0.0, "train_loss": 0.667, "val_BLEU": 0.03555744006863721, "val_METEOR": 0.31587613111763385, "epoch": 0, "best_epoch": 0}
+{"train_lr": 0.0, "train_loss": 0.823, "val_BLEU": 0.06439562308746653, "val_METEOR": 0.35567167965403307, "epoch": 0, "best_epoch": 0}
+{"train_lr": 0.0, "train_loss": 0.531, "val_BLEU": 0.038683129408389375, "val_METEOR": 0.3164744821374057, "epoch": 1, "best_epoch": 0}
+{"train_lr": 0.0, "train_loss": 0.393, "val_BLEU": 0.0590772488223566, "val_METEOR": 0.3515626943126498, "epoch": 2, "best_epoch": 0}
+{"train_lr": 0.0, "train_loss": 0.299, "val_BLEU": 0.055525729774667056, "val_METEOR": 0.34584750678940535, "epoch": 3, "best_epoch": 0}
+{"train_lr": 0.0, "train_loss": 0.244, "val_BLEU": 0.05215250669841299, "val_METEOR": 0.3513159542330311, "epoch": 4, "best_epoch": 0}

@@ -13,7 +13,7 @@ test_file: "flickr8k_test.json"
 # coco_gt_root: 'annotation/coco_gt'  # 이 부분은 제거하거나 Flickr8k에 맞게 수정
 
 # 모델 체크포인트 경로
-pretrained: "checkpoints/blip_smile_base.pth"
+pretrained: "checkpoints/model_base.pth"
 
 # 모델 설정
 vit: "base"

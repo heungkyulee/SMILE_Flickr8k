@@ -29,7 +29,7 @@ The following changes were made from the [original GitHub repositories](https://
 
 1. **Download the Checkpoint Model**: [blip_smile_base.pth](https://huggingface.co/spaces/yuezih/BLIP-SMILE/tree/main/model)
 2. **Place the Checkpoint Model**:
-   - Save the downloaded `blip_smile_base.pth` file at the path `checkpoints/blip_base.pth`.
+   - Save the downloaded `blip_smile_base.pth` file at the path `checkpoints/model_base.pth`.
 3. **Visit the Flickr8k Dataset Page**: [Flickr8k Dataset](https://www.kaggle.com/datasets/adityajn105/flickr8k)
 4. **Download the Dataset**:
 

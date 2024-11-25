@@ -8,7 +8,7 @@ val_file: "flickr8k_val.json"
 test_file: "flickr8k_test.json" # 필요에 따라 추가
 
 # set pretrained as a file path or an url
-pretrained: "checkpoints/blip_smile_base.pth"
+pretrained: "checkpoints/model_base.pth"
 
 # size of vit model; base or large
 vit: "base"
